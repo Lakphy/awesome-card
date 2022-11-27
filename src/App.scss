@@ -1,0 +1,39 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .a4 {
+    width: 70vw;
+    max-width: 594px;
+    height: 49.5vw;
+    max-height: 420px;
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+      0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+    perspective: 800px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    img {
+      width: 72px;
+      height: 72px;
+      -webkit-user-drag: none;
+    }
+    .kfc {
+      width: calc(70vw - 150px);
+      color: red;
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+body {
+  margin: 0;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
